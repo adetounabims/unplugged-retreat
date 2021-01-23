@@ -129,12 +129,12 @@ p {
   line-height: 1.285;
 }
  
-img {
- 
+img { 
+  width: 100%;
 }
  
 figure {
- 
+        margin: 0;
 }
  
 address {
@@ -171,6 +171,14 @@ header .content-wrapper{
   flex-flow: row wrap;
   width: 100%;
   margin: 0;
+}
+
+header figure {
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
 }
 
 .header-divider{
@@ -235,12 +243,15 @@ footer .copyright{
   margin: 20px 0;
 }
 
-
 /*------------ MOBILE STYLES  ------------*/
 /*homepage*/
 /*HERO AREA */
 
   .hero-area{
+  background: url('../img/jake-melara-30679-unsplash.jpg') no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 500px;
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
@@ -252,6 +263,7 @@ footer .copyright{
     font-weight: 500;
     line-height: 1.2;
   }
+
 
 /*****ASIDE*****/
 
@@ -290,7 +302,10 @@ input[type=button] {
 }
 
 /************FEATURES************/
-  .features{
+.features{
+    background: url('../img/rawpixel-800820-unsplash1.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
@@ -482,8 +497,8 @@ input[type=button] {
 
 @media only screen and (min-width: 768px) {
 /*Tablet styles here*/
-
 /* GENERAL STYLES */
+
   .content-wrapper {
         max-width: 640px;
         margin: 100px 0;
@@ -525,9 +540,20 @@ input[type=button] {
     .header-divider {
         display: none;
     }
- 
-    /* Hero Area */
- 
+
+}
+
+ /* Hero Area */
+.hero-area{
+  min-height: 600px;
+}
+
+.hero-area h1 {
+    font-size: 3em;
+    line-height: 1;
+    margin: 0;
+}
+
     /* Aside */
     aside .content-wrapper {
         margin: 50px 0;
@@ -543,7 +569,7 @@ input[type=button] {
     }
  
     /* Features */
-    
+
     .features h2 {
       margin-bottom: 20px;
     }
@@ -574,7 +600,9 @@ input[type=button] {
       width: 75%;
     }
     
-    .reviews article div {
+    .reviews article div,
+    .reviews article figure 
+    {
         width: 49%;     
     }
  
@@ -679,12 +707,13 @@ input[type=button] {
       font-size: 1.125em;
       line-height: 1.333;
     }
+
  
      /* Hero */
 
     .hero-area h1 {
       font-size: 3.75em;
-        width:60%; 
+      width:60%; 
     }
  
     /* Aside */
@@ -702,6 +731,7 @@ input[type=button] {
     }
  
     /* Features */
+
 
     .features h2 {
         width: 90%;
