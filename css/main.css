@@ -411,8 +411,8 @@ input[type=button] {
   background-color: #527158;
   display: flex;
   align-items: center;
-  flex-flow: row wrap;
   justify-content: center;
+    flex-flow: row wrap;
 }
 
 .faq .content-wrapper {
