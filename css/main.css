@@ -191,12 +191,12 @@ header figure {
 }
 
 header nav{
+  width: 60%;
+  font-size: 1.125em;
   display: flex;
   align-items: center;
   justify-content: space-around;
   flex-flow: row wrap;
-  width: 60%;
-  font-size: 1.125em;
   font-weight: 700;
   text-transform: uppercase;
 }
@@ -216,17 +216,17 @@ footer{
   flex-direction: column;
 }
 
-footer .contact{
+footer .contact {
   margin-bottom: 50px;
 }
 
-footer .social-icons{
+footer .social-icons {
   display: flex;
   align-items: center;
   justify-content: space-around;
 }
 
-footer .social-icons p{
+footer .social-icons p {
   background-color: #527158;
   border-radius: 50%;
   display: flex;
@@ -240,16 +240,16 @@ footer .social-icons p i {
   font-size: 1.3125em;
 }
 
-footer .content-wrapper{
+footer .content-wrapper {
   width: 55%;
   margin: 50px 0;
 }
 
-footer p{
+footer p {
   margin: 0;
 }
 
-footer .copyright{
+footer .copyright {
   margin: 20px 0;
 }
 
@@ -267,7 +267,7 @@ footer .copyright{
   justify-content: center;
   }
 
-  .hero-area h1{
+  .hero-area h1 {
     font-size: 2.25em;
     font-family: 'Poppins', Helvetica, Arial, sans-serif;
     font-weight: 500;
@@ -552,7 +552,7 @@ input[type=button] {
     }
  
     header .content-wrapper {
-        width:100%;
+        width: 100%;
         justify-content: space-between;
     }
     
@@ -571,8 +571,6 @@ input[type=button] {
     .header-divider {
         display: none;
     }
-
-}
 
  /* Hero Area */
 .hero-area{
@@ -647,14 +645,14 @@ input[type=button] {
         margin: 100px 0;
     }
     
-    footer .footer-content{
+    footer .footer-content {
       display: flex;
       align-items: center;
       flex-direction: row;
       justify-content: space-between;
     }
 
-    footer h4{
+    footer h4 {
       font-size: 1.5em;
       margin-bottom: 40px;
     }
@@ -668,7 +666,7 @@ input[type=button] {
 
     }
 
-    footer .social-icons{
+    footer .social-icons {
       width: 12.5em;
       justify-content: space-between;
     }
